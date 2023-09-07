@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Você é estrangeiro?</title>
+    <style>
+        body{
+            height: 600px;
+            background-image: linear-gradient(to bottom , green, green, black);
+        }
+        header{
+            display: block;
+            position: relative;
+            justify-content: center;
+            text-align: center;
+            margin: auto;
+            padding: 50px;
+            
+            
+            width: 350px;
+            height: 250px;
+        }
+        #perg{
+            display: block;
+            margin: auto;
+            border: 2px solid black;
+            padding: 50px;
+            border-radius: 50%;
+            background-color: white;
+            box-shadow: 2px 10px 20px black;
+        }
+        p{
+            font-size: 20pt;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        #text{
+            font-size: 20pt;
+            color: black;
+            background-color: white;
+            border: 1px solid black;
+            border-radius: 20px;
+            padding: 10px;
+        }
+        h1{
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        input{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20pt;
+            width: 200px;
+            height: 40px;
+            border-radius: 40px;
+            text-align: center;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="perg">
+            <h1>De onde você veio?</h1>
+            <p>Seu país: </p><input type="text" name="txtp" id="txtp">
+            <input type="button" value="verificar" onclick="verificar()">
+        </div>
+    
+    <div id="resposta">
+
+    </div>
+    <script>
+        function verificar(){
+            var txtp = window.document.querySelector('input#txtp')
+            var loc = String(txtp.value)
+            var res = window.document.querySelector('div#resposta')
+
+            res.innerHTML = `<p id ="text">se você é do(a) ${loc} </p>`
+            if (loc == 'Brasil'){
+                res.innerHTML = `<p id="text"><strong>Você é Brasileiro!</strong></p> `
+            } else {
+                res.innerHTML = `<p id="text"><strong>Você é estrangeiro!</strong></p>`
+                
+            }
+            res.innerHTML += `<p id="text">bem vindo</p>`
+
+        }
+    </script>
+    </header>
+</body>
+</html>
