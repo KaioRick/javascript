@@ -12,6 +12,7 @@ function carregar() {
     } else if (hora >= 12 && hora < 18){
         img.src = 'tarde-removebg-preview.png'
         document.body.style.background = '#BFA38A'
+        
     //BOA TARDE!
     }else{
         img.src = "noite-removebg-preview.png"
