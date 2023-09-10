@@ -13,7 +13,7 @@ html{
 }
 body{
     align-items: center;
-    background: linear-gradient(320deg, #eb92be, #ffef78, #63c9b4);
+    background: linear-gradient(320deg, #721d47, #7c1d19, #146353);
     display: flex;
     font-family: 'Dosis', sans-serif;
     font-display: swap;
@@ -86,10 +86,14 @@ body{
     background-color: #ffef78;
 }
 
+.calc-button:active{
+    background-color: #ffef78;
+}
+
 .double{
     flex-basis: 47%;
 }
 
 .triple{
-    
+    flex-basis: 43%;
 }
