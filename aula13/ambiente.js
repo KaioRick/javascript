@@ -1,10 +1,19 @@
 
-var d = 1
+
+var ini = 1
+var fim = 10
+do{
+    console.log(`contando: ${ini}`)
+    ini++
+}while(ini <= fim)
+
+/*var d = 1
+
 do{
     console.log(`andou ${d}Km`)
     d++
-}while(d <= 10 )
-
+}while(d <= 5)
+*/
 
 
 
